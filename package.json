@@ -1,0 +1,21 @@
+{
+    "name": "@patronumlabs/force-transfer",
+    "version": "1.0.0",
+    "description": "A library containing smart contracts that allow for the force transfer of native tokens to addresses using selfdestruct",
+    "author": "Yamen Merhi (0xYamen)",
+    "homepage": "https://github.com/Patronum-Labs/force-transfer#readme",
+    "bugs": {
+        "url": "https://github.com/Patronum-Labs/force-transfer/issues"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/Patronum-Labs/force-transfer.git"
+    },
+    "keywords": [
+        "selfdestruct",
+        "force transfer",
+        "force value send",
+        "EIP-6780"
+    ],
+    "license": "MIT"
+}
