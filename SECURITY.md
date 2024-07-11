@@ -7,10 +7,12 @@ Our contracts utilize the `selfdestruct` opcode to force Ether transfers. While 
 Our implementation should not be affected by these potential changes:
 
 1. **EIP-6049: Deprecation of `selfdestruct`**
+
    - `selfdestruct` has been deprecated according to EIP-6049.
    - It may be subject to breaking changes in future Ethereum upgrades.
 
 2. **EIP-6780: SELFDESTRUCT only in same transaction**
+
    - Our implementation is not affected by EIP-6780.
    - We use `selfdestruct` in the same transaction as contract creation, which is an exception in EIP-6780.
    - In this case, `selfdestruct` behaves as it did prior to the EIP:

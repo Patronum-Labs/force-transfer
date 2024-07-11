@@ -28,24 +28,23 @@ pragma solidity ^0.8.0;
 import "@patronumlabs/force-transfer/contracts/ForceTransferLib.sol";
 
 contract MyContract {
-    function forceTransferToAddress(address payable recipient) external payable {
-        ForceTransferLib.force(recipient, msg.value);
-    }
+  function forceTransferToAddress(address payable recipient) external payable {
+    ForceTransferLib.force(recipient, msg.value);
+  }
 }
 ```
 
 Constants related to the **ForceTransfer Singleton** are exported as well.
 
 ```javascript
-import { FORCE_TRANSFER_SINGLETON_CONFIG } from '@patronumlabs/force-transfer';
+import { FORCE_TRANSFER_SINGLETON_CONFIG } from "@patronumlabs/force-transfer";
 
 function checkRawTransactionAndDeployer() {
   console.log(FORCE_TRANSFER_SINGLETON_CONFIG.rawTx);
-  console.log(FORCE_TRANSFER_SINGLETON_CONFIG.deployerAddress)
+  console.log(FORCE_TRANSFER_SINGLETON_CONFIG.deployerAddress);
 }
 
 checkRawTransactionAndDeployer();
-
 ```
 
 ## Deployment

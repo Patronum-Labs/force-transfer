@@ -24,7 +24,7 @@ async function createAndWriteRawDeployment(): Promise<object> {
     const content = `/**
  * @notice Configuration and raw Transaction for the ForceTransfer Singleton
  */
-export const FORCE_TRANSFER_SINGLETON_CONFIG = {
+const FORCE_TRANSFER_SINGLETON_CONFIG = {
     gasLimit: ${config.gasLimit},
     gasPrice: ${config.gasPrice},
     bytecode: '${config.bytecode}',
@@ -36,6 +36,10 @@ export const FORCE_TRANSFER_SINGLETON_CONFIG = {
     s: '${deploymentResult.s}',
     v: ${deploymentResult.v},
     upfrontCost: '${deploymentResult.upfrontCost}',
+};
+
+module.exports = {
+    FORCE_TRANSFER_SINGLETON_CONFIG,
 };
 `;
 
