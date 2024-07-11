@@ -29,7 +29,8 @@
     "test": "forge test",
     "build": "hardhat compile && hardhat run scripts/generateRawTransaction.ts",
     "prettier": "prettier -w .",
-    "ci": "pnpm run test && pnpm run build"
+    "ci": "pnpm run test && pnpm run build",
+    "release": "pnpm run test && pnpm run build && changeset publish"
   },
   "devDependencies": {
     "@changesets/cli": "^2.27.7",
