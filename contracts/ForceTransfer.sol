@@ -14,7 +14,7 @@ contract ForceTransfer {
     /// @param recipient The address to receive the value
     /// @custom:security This function will always succeed, given enough gas, even if the recipient
     /// is a contract without a receive function
-    function force(address payable recipient) public payable {
+    function force(address payable recipient) external payable {
         new SelfDestructContract{value: msg.value}(recipient);
     }
 }
