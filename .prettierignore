@@ -1,3 +1,4 @@
 pnpm-lock.yaml
 constants.js
 /artifacts
+.github/workflows/*.yml
