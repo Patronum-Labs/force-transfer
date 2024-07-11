@@ -32,6 +32,9 @@ importers:
       '@nomicfoundation/hardhat-verify':
         specifier: ^2.0.0
         version: 2.0.8(hardhat@2.22.6(ts-node@10.9.2(@types/node@20.14.10)(typescript@5.5.3))(typescript@5.5.3))
+      '@patronumlabs/nick-method':
+        specifier: ^1.1.0
+        version: 1.1.0
       '@typechain/ethers-v6':
         specifier: ^0.5.0
         version: 0.5.1(ethers@6.13.1)(typechain@8.3.2(typescript@5.5.3))(typescript@5.5.3)
@@ -65,6 +68,12 @@ importers:
       hardhat-gas-reporter:
         specifier: ^1.0.8
         version: 1.0.10(hardhat@2.22.6(ts-node@10.9.2(@types/node@20.14.10)(typescript@5.5.3))(typescript@5.5.3))
+      prettier:
+        specifier: ^3.3.2
+        version: 3.3.2
+      prettier-plugin-solidity:
+        specifier: ^1.3.1
+        version: 1.3.1(prettier@3.3.2)
       solidity-coverage:
         specifier: ^0.8.0
         version: 0.8.12(hardhat@2.22.6(ts-node@10.9.2(@types/node@20.14.10)(typescript@5.5.3))(typescript@5.5.3))
@@ -87,10 +96,21 @@ packages:
     resolution: {integrity: sha512-IchNf6dN4tHoMFIn/7OE8LWZ19Y6q/67Bmf6vnGREv8RSbBVb9LPJxEcnwrcwX6ixSvaiGoomAUvu4YSxXrVgw==}
     engines: {node: '>=12'}
 
+  '@ethereumjs/common@3.0.2':
+    resolution: {integrity: sha512-N8fpT5uDvxOE5dIaPQZWzJaBRkRWrCXv63MONEn5ikp/J9mWFc53VUjb3GqtIYHRgg9nP81TXmtnvQJz1IuTiw==}
+
   '@ethereumjs/rlp@4.0.1':
     resolution: {integrity: sha512-tqsQiBQDQdmPWE1xkkBq4rlSW5QZpLOUJ5RJh2/9fug+q9tnUhuZoVLk7s0scUIKTOzEtR72DFBXI4WiZcMpvw==}
     engines: {node: '>=14'}
     hasBin: true
+
+  '@ethereumjs/tx@4.0.2':
+    resolution: {integrity: sha512-6GoKVK3MVcAFFn4qSLIIDZ1vrKSLn7W5L80Pvae1BJFgchu+11R2iOqQyVGUSGbaXllh4xliUy/7+x5pYwRY8Q==}
+    engines: {node: '>=14'}
+
+  '@ethereumjs/util@8.0.3':
+    resolution: {integrity: sha512-0apCbwc8xAaie6W7q6QyogfyRS2BMU816a8KwpnpRw9Qrc6Bws+l7J3LfCLMt2iL6Wi8CYb0B29AeIr2N4vHnw==}
+    engines: {node: '>=14'}
 
   '@ethereumjs/util@8.1.0':
     resolution: {integrity: sha512-zQ0IqbdX8FZ9aw11vP+dZkKDkS+kgIvQPHnSAXzP9pLu+Rfu3D3XEeLbicvoXJTYnhZiPmsZUxgdzXwNKxRPbA==}
@@ -401,6 +421,9 @@ packages:
     resolution: {integrity: sha512-q4n32/FNKIhQ3zQGGw5CvPF6GTvDCpYwIf7bEY/dZTZbgfDsHyjJwURxUJf3VQuuJj+fDIFl4+KkBVbw4Ef6jA==}
     engines: {node: '>= 12'}
 
+  '@patronumlabs/nick-method@1.1.0':
+    resolution: {integrity: sha512-x3ff1Tc3iqhOADGFD/HY193qg/K9wRwaavi1LqhhHTC1lMO37dQLeKND/VT4prx2NjEayDMaP0h0XgHmAVwwTg==}
+
   '@scure/base@1.1.7':
     resolution: {integrity: sha512-PPNYBslrLNNUQ/Yad37MHYsNQtK67EhWb6WtSvNLLPo7SdVZgkUjD6Dg+5On7zNwmskf8OX7I7Nx5oN+MIWE0g==}
 
@@ -446,6 +469,9 @@ packages:
 
   '@solidity-parser/parser@0.14.5':
     resolution: {integrity: sha512-6dKnHZn7fg/iQATVEzqyUOyEidbn05q7YA2mQ9hC0MMXhhV3/JrsxmFSYZAcr7j1yUP700LLhTruvJ3MiQmjJg==}
+
+  '@solidity-parser/parser@0.17.0':
+    resolution: {integrity: sha512-Nko8R0/kUo391jsEHHxrGM07QFdnPGvlmox4rmH0kNiNAashItAilhy4Mv4pK5gQmW5f4sXAF58fwJbmlkGcVw==}
 
   '@solidity-parser/parser@0.18.0':
     resolution: {integrity: sha512-yfORGUIPgLck41qyN7nbwJRAx17/jAIXCTanHOJZhB6PJ1iAk/84b/xlsVKFSyNyLXIj0dhppoE0+CRws7wlzA==}
@@ -640,6 +666,9 @@ packages:
   async@1.5.2:
     resolution: {integrity: sha512-nSVgobk4rv61R9PUSDtYt7mPVB2olxNR5RWJcAsH676/ef11bUZwvu7+RGYrYauVdDPcO519v68wRhXQtxsV9w==}
 
+  async@3.2.5:
+    resolution: {integrity: sha512-baNZyqaaLhyLVKm/DlvdW051MSgO6b8eVfIezl9E5PqWxFgzLm/wQntEW4zOytVburDEr0JlALEpdOFwvErLsg==}
+
   asynckit@0.4.0:
     resolution: {integrity: sha512-Oei9OH4tRh0YqU3GxhX79dM/mwVgvbZJaSNaRk+bshkj0S5cfHcgYakreBjrHwatXKbz+IoIdYLxrKim2MjW0Q==}
 
@@ -830,6 +859,11 @@ packages:
 
   core-util-is@1.0.3:
     resolution: {integrity: sha512-ZQBvi1DcpJ4GDqanjucZ2Hj3wEO5pZDS89BWbkcrvdxksJorwUDDZamX9ldFkp9aw2lmBDLgkObEA4DWNJ9FYQ==}
+
+  crc-32@1.2.2:
+    resolution: {integrity: sha512-ROmzCKrTnOwybPcJApAA6WBWij23HVfGVNKqqrZpuyZOHqK2CwHSvpGuyt/UNNvaIjEd8X5IFGp4Mh+Ie1IHJQ==}
+    engines: {node: '>=0.8'}
+    hasBin: true
 
   create-hash@1.2.0:
     resolution: {integrity: sha512-z00bCGNHDG8mHAkP7CtT1qVu+bFQUPjYq/4Iv3C3kWjTFV10zIjfSoeqXo9Asws8gwSHDGj/hl2u4OGIjapeCg==}
@@ -1582,9 +1616,20 @@ packages:
     resolution: {integrity: sha512-ESF23V4SKG6lVSGZgYNpbsiaAkdab6ZgOxe52p7+Kid3W3u3bxR4Vfd/o21dmN7jSt0IwgZ4v5MUd26FEtXE9w==}
     engines: {node: '>= 0.8.0'}
 
+  prettier-plugin-solidity@1.3.1:
+    resolution: {integrity: sha512-MN4OP5I2gHAzHZG1wcuJl0FsLS3c4Cc5494bbg+6oQWBPuEamjwDvmGfFMZ6NFzsh3Efd9UUxeT7ImgjNH4ozA==}
+    engines: {node: '>=16'}
+    peerDependencies:
+      prettier: '>=2.3.0'
+
   prettier@2.8.8:
     resolution: {integrity: sha512-tdN8qQGvNjw4CHbY+XXk0JgCXn9QiF21a55rBe5LJAU+kDyC4WQn4+awm2Xfk2lQMk5fKup9XgzTZtGkjBdP9Q==}
     engines: {node: '>=10.13.0'}
+    hasBin: true
+
+  prettier@3.3.2:
+    resolution: {integrity: sha512-rAVeHYMcv8ATV5d508CFdn+8/pHPpXeIid1DdrPwXnaAdH7cqjVbpJaT5eq4yRAFU/lsbwYwSF/n5iNrdJHPQA==}
+    engines: {node: '>=14'}
     hasBin: true
 
   process-nextick-args@2.0.1:
@@ -1758,6 +1803,9 @@ packages:
     resolution: {integrity: sha512-yiPQNVf5rBFHwN6SIf3TUUvVAFKcQqmSUFeq+fb6pNRCo0ZCgpYOZDi3BVoezCPIAcKrVYd/qXlBLUP9wVrZ9g==}
     engines: {node: '>=10.0.0'}
     hasBin: true
+
+  solidity-comments-extractor@0.0.8:
+    resolution: {integrity: sha512-htM7Vn6LhHreR+EglVMd2s+sZhcXAirB1Zlyrv5zBuTxieCvjfnRpd7iZk75m/u6NOlEyQ94C6TWbBn2cY7w8g==}
 
   solidity-coverage@0.8.12:
     resolution: {integrity: sha512-8cOB1PtjnjFRqOgwFiD8DaUsYJtVJ6+YdXQtSZDrLGf8cdhhh8xzTtGzVTGeBf15kTv0v7lYPJlV/az7zLEPJw==}
@@ -2094,7 +2142,29 @@ snapshots:
     dependencies:
       '@jridgewell/trace-mapping': 0.3.9
 
+  '@ethereumjs/common@3.0.2':
+    dependencies:
+      '@ethereumjs/util': 8.1.0
+      crc-32: 1.2.2
+
   '@ethereumjs/rlp@4.0.1': {}
+
+  '@ethereumjs/tx@4.0.2':
+    dependencies:
+      '@ethereumjs/common': 3.0.2
+      '@ethereumjs/rlp': 4.0.1
+      '@ethereumjs/util': 8.1.0
+      ethereum-cryptography: 1.2.0
+      ethers: 5.7.2
+    transitivePeerDependencies:
+      - bufferutil
+      - utf-8-validate
+
+  '@ethereumjs/util@8.0.3':
+    dependencies:
+      '@ethereumjs/rlp': 4.0.1
+      async: 3.2.5
+      ethereum-cryptography: 1.2.0
 
   '@ethereumjs/util@8.1.0':
     dependencies:
@@ -2594,6 +2664,15 @@ snapshots:
       '@nomicfoundation/solidity-analyzer-linux-x64-musl': 0.1.2
       '@nomicfoundation/solidity-analyzer-win32-x64-msvc': 0.1.2
 
+  '@patronumlabs/nick-method@1.1.0':
+    dependencies:
+      '@ethereumjs/common': 3.0.2
+      '@ethereumjs/tx': 4.0.2
+      '@ethereumjs/util': 8.0.3
+    transitivePeerDependencies:
+      - bufferutil
+      - utf-8-validate
+
   '@scure/base@1.1.7': {}
 
   '@scure/bip32@1.1.5':
@@ -2670,6 +2749,8 @@ snapshots:
   '@solidity-parser/parser@0.14.5':
     dependencies:
       antlr4ts: 0.5.0-alpha.4
+
+  '@solidity-parser/parser@0.17.0': {}
 
   '@solidity-parser/parser@0.18.0': {}
 
@@ -2839,6 +2920,8 @@ snapshots:
   astral-regex@2.0.0: {}
 
   async@1.5.2: {}
+
+  async@3.2.5: {}
 
   asynckit@0.4.0: {}
 
@@ -3059,6 +3142,8 @@ snapshots:
   cookie@0.4.2: {}
 
   core-util-is@1.0.3: {}
+
+  crc-32@1.2.2: {}
 
   create-hash@1.2.0:
     dependencies:
@@ -3944,7 +4029,16 @@ snapshots:
 
   prelude-ls@1.1.2: {}
 
+  prettier-plugin-solidity@1.3.1(prettier@3.3.2):
+    dependencies:
+      '@solidity-parser/parser': 0.17.0
+      prettier: 3.3.2
+      semver: 7.6.2
+      solidity-comments-extractor: 0.0.8
+
   prettier@2.8.8: {}
+
+  prettier@3.3.2: {}
 
   process-nextick-args@2.0.1: {}
 
@@ -4141,6 +4235,8 @@ snapshots:
       tmp: 0.0.33
     transitivePeerDependencies:
       - debug
+
+  solidity-comments-extractor@0.0.8: {}
 
   solidity-coverage@0.8.12(hardhat@2.22.6(ts-node@10.9.2(@types/node@20.14.10)(typescript@5.5.3))(typescript@5.5.3)):
     dependencies:

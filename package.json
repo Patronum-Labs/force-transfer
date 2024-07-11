@@ -1,46 +1,55 @@
 {
-    "name": "@patronumlabs/force-transfer",
-    "version": "1.0.0",
-    "description": "A library containing smart contracts that allow for the force transfer of native tokens to addresses using selfdestruct",
-    "author": "Yamen Merhi (0xYamen)",
-    "homepage": "https://github.com/Patronum-Labs/force-transfer#readme",
-    "bugs": {
-        "url": "https://github.com/Patronum-Labs/force-transfer/issues"
-    },
-    "repository": {
-        "type": "git",
-        "url": "git+https://github.com/Patronum-Labs/force-transfer.git"
-    },
-    "keywords": [
-        "selfdestruct",
-        "force transfer",
-        "force value send",
-        "EIP-6780"
-    ],
-    "license": "MIT",
-    "devDependencies": {
-        "@nomicfoundation/hardhat-chai-matchers": "^2.0.0",
-        "@nomicfoundation/hardhat-ethers": "^3.0.0",
-        "@nomicfoundation/hardhat-foundry": "^1.1.2",
-        "@nomicfoundation/hardhat-ignition": "^0.15.0",
-        "@nomicfoundation/hardhat-ignition-ethers": "^0.15.0",
-        "@nomicfoundation/hardhat-network-helpers": "^1.0.0",
-        "@nomicfoundation/hardhat-toolbox": "^5.0.0",
-        "@nomicfoundation/hardhat-verify": "^2.0.0",
-        "@typechain/ethers-v6": "^0.5.0",
-        "@typechain/hardhat": "^9.0.0",
-        "@types/chai": "^4.2.0",
-        "@types/mocha": ">=9.1.0",
-        "@types/node": ">=18.0.0",
-        "chai": "^4.2.0",
-        "ds-test": "github:dapphub/ds-test",
-        "ethers": "^6.4.0",
-        "forge-std": "github:foundry-rs/forge-std",
-        "hardhat": "^2.22.6",
-        "hardhat-gas-reporter": "^1.0.8",
-        "solidity-coverage": "^0.8.0",
-        "ts-node": ">=8.0.0",
-        "typechain": "^8.3.0",
-        "typescript": ">=4.5.0"
-    }
+  "name": "@patronumlabs/force-transfer",
+  "version": "1.0.0",
+  "description": "A library containing smart contracts that allow for the force transfer of native tokens to addresses using selfdestruct",
+  "author": "Yamen Merhi (0xYamen)",
+  "homepage": "https://github.com/Patronum-Labs/force-transfer#readme",
+  "bugs": {
+    "url": "https://github.com/Patronum-Labs/force-transfer/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Patronum-Labs/force-transfer.git"
+  },
+  "keywords": [
+    "selfdestruct",
+    "force transfer",
+    "force value send",
+    "EIP-6780"
+  ],
+  "license": "MIT",
+  "files": [
+    "contracts/**/*.sol",
+    "artifacts/*.json",
+    "constants.js",
+    "./README.md"
+  ],
+  "devDependencies": {
+    "@nomicfoundation/hardhat-chai-matchers": "^2.0.0",
+    "@nomicfoundation/hardhat-ethers": "^3.0.0",
+    "@nomicfoundation/hardhat-foundry": "^1.1.2",
+    "@nomicfoundation/hardhat-ignition": "^0.15.0",
+    "@nomicfoundation/hardhat-ignition-ethers": "^0.15.0",
+    "@nomicfoundation/hardhat-network-helpers": "^1.0.0",
+    "@nomicfoundation/hardhat-toolbox": "^5.0.0",
+    "@nomicfoundation/hardhat-verify": "^2.0.0",
+    "@patronumlabs/nick-method": "^1.1.0",
+    "@typechain/ethers-v6": "^0.5.0",
+    "@typechain/hardhat": "^9.0.0",
+    "@types/chai": "^4.2.0",
+    "@types/mocha": ">=9.1.0",
+    "@types/node": ">=18.0.0",
+    "chai": "^4.2.0",
+    "ds-test": "github:dapphub/ds-test",
+    "ethers": "^6.4.0",
+    "forge-std": "github:foundry-rs/forge-std",
+    "hardhat": "^2.22.6",
+    "hardhat-gas-reporter": "^1.0.8",
+    "prettier": "^3.3.2",
+    "prettier-plugin-solidity": "^1.3.1",
+    "solidity-coverage": "^0.8.0",
+    "ts-node": ">=8.0.0",
+    "typechain": "^8.3.0",
+    "typescript": ">=4.5.0"
+  }
 }
