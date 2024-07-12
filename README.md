@@ -37,7 +37,7 @@ contract MyContract {
 Constants related to the **ForceTransfer Singleton** are exported as well.
 
 ```javascript
-import { FORCE_TRANSFER_SINGLETON_CONFIG } from "@patronumlabs/force-transfer";
+import { FORCE_TRANSFER_SINGLETON_CONFIG } from "@patronumlabs/force-transfer/constants.js"
 
 function checkRawTransactionAndDeployer() {
   console.log(FORCE_TRANSFER_SINGLETON_CONFIG.rawTx);
