@@ -53,6 +53,20 @@ For deployment of the **ForceTransfer Singleton**, the nick-method is used with 
 
 If you need help deploying on a specified network, feel free to submit an issue.
 
+## [`ForceTransfer`](./contracts/ForceTransfer.sol) Deployments
+
+📌 The deployment address of [`ForceTransfer`](./contracts/ForceTransfer.sol) is **`0xBbfa4F54FF391957894c074A6eb34b7c967b7dAe`**.
+
+> The Full list can be found in the [`deployments.json`](./deployments/deployments.json) file.
+
+### EVM-Based Production Networks
+
+- [LUKSO](https://explorer.execution.mainnet.lukso.network/address/0xBbfa4F54FF391957894c074A6eb34b7c967b7dAe)
+
+### Additional EVM-Based Test Networks
+
+- [LUKSO Testnet](https://explorer.execution.testnet.lukso.network/address/0xBbfa4F54FF391957894c074A6eb34b7c967b7dAe)
+
 ## Contributing
 
 Contributions are welcome! Please feel free to submit a Pull Request.
