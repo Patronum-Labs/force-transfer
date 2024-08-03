@@ -6,7 +6,7 @@ Deploying the **ForceTransfer Singleton** is a straightforward process using the
 
 2. Specify the RPC URL for the desired chain you want to deploy to.
 
-3. Fund the deployer address with the required amount of native tokens. The deployer address is `0x100552c518F921A5F09Ca5533Ea521ce358B6C89`. Ensure this address has enough funds to cover the deployment gas costs.
+3. Fund the deployer address with the required amount of native tokens. The deployer address is `0x2c5F13f2e0781120c6c661B48a7C82d7Ab416A5A`. Ensure this address has enough funds to cover the deployment gas costs.
 
 4. Run the deployment script using Hardhat:
 
