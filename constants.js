@@ -15,6 +15,6 @@ const FORCE_TRANSFER_SINGLETON_CONFIG = {
     upfrontCost: '100000000000000000',
 };
 
-export default {
+module.exports = {
     FORCE_TRANSFER_SINGLETON_CONFIG,
 };
