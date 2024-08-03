@@ -1,0 +1,16 @@
+[
+  {
+    "name": "LUKSO",
+    "chainId": 42,
+    "urls": [
+      "https://explorer.execution.mainnet.lukso.network/address/0xBbfa4F54FF391957894c074A6eb34b7c967b7dAe"
+    ]
+  },
+  {
+    "name": "LUKSO Testnet",
+    "chainId": 4201,
+    "urls": [
+      "https://explorer.execution.testnet.lukso.network/address/0xBbfa4F54FF391957894c074A6eb34b7c967b7dAe"
+    ]
+  }
+]
